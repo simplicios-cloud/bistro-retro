@@ -1,0 +1,1 @@
+Coloque aqui as fotos autorizadas e aponte para elas em dados.js (campo galeria), ex.: "imagens/foto1.jpg".

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bistrô Retrô | Restaurante e bar em Franca, SP</title>
+<meta name="description" content="Bistrô Retrô, restaurante e bar em Franca, São Paulo. Sabores que despertam memórias: cardápio, galeria, horários e como chegar.">
+<meta name="theme-color" content="#4a1520">
+<link rel="canonical" href="https://bistroretro.com/">
+<meta property="og:url" content="https://bistroretro.com/">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="Bistrô Retrô | Restaurante e bar em Franca, SP">
+<meta property="og:description" content="Sabores que despertam memórias. Restaurante e bar em Franca, SP.">
+<meta property="og:locale" content="pt_BR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500;1,600&family=Josefin+Sans:wght@400;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+<header class="topo">
+  <a class="marca" href="#inicio" aria-label="Bistrô Retrô, início">Bistrô Retrô</a>
+  <button class="burger" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" aria-label="Principal">
+    <a href="#sobre">O bistrô</a>
+    <a href="#cardapio">Cardápio</a>
+    <a href="#destaques">Destaques</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#visita">Visite</a>
+  </nav>
+</header>
+
+<main id="conteudo">
+  <section id="inicio" class="hero">
+    <div class="moldura">
+      <p class="selo">Restaurante e bar · Franca, SP</p>
+      <h1>Sabores que despertam memórias</h1>
+      <p class="lead">Uma mesa posta com calma, boa conversa e o aconchego de um bistrô de outros tempos.</p>
+      <div class="acoes">
+        <a class="btn" href="#cardapio">Ver o cardápio</a>
+        <a class="btn btn-zap" data-zap hidden target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      </div>
+    </div>
+    <figure class="foto demo" role="img" aria-label="Espaço reservado para foto do restaurante">
+      <figcaption>Foto de demonstração</figcaption>
+    </figure>
+  </section>
+
+  <section id="sobre" class="bloco estreito">
+    <h2>O bistrô</h2>
+    <!-- EDITE o texto abaixo com a história real do restaurante -->
+    <p>O Bistrô Retrô é um restaurante e bar em Franca, no interior de São Paulo, feito para quem gosta de comer devagar, brindar e voltar para casa com uma boa lembrança.</p>
+    <p class="nota">Texto de apresentação provisório: substitua pela história, equipe e diferenciais reais da casa.</p>
+  </section>
+
+  <section id="cardapio" class="bloco papel">
+    <h2>Cardápio</h2>
+    <div class="abas" role="tablist" aria-label="Categorias do cardápio"></div>
+    <div class="painel" id="painel" role="tabpanel" tabindex="0"></div>
+  </section>
+
+  <section id="destaques" class="bloco">
+    <h2>Destaques da casa</h2>
+    <div class="destaques" id="destaquesLista"></div>
+  </section>
+
+  <section id="galeria" class="bloco papel">
+    <h2>Galeria</h2>
+    <ul class="galeria" id="galeriaLista"></ul>
+  </section>
+
+  <section id="visita" class="bloco">
+    <h2>Visite o Bistrô Retrô</h2>
+    <div class="visita">
+      <div>
+        <h3>Endereço</h3>
+        <p id="endereco"></p>
+        <h3>Horários</h3>
+        <p id="avisoHorario" class="nota"></p>
+        <dl id="horarios"></dl>
+        <h3>Fale com a gente</h3>
+        <ul class="links" id="links"></ul>
+      </div>
+      <div class="mapa" id="mapa"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© <span id="ano"></span> Bistrô Retrô · Franca, São Paulo</p>
+</footer>
+
+<script src="dados.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
